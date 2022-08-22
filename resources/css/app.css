@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+
+.titulo{
+    @apply font-bold text-2xl m-4 ml-7 text-red-brown;
+}
+
+.botones{
+    @apply bg-red-brown text-white font-bold text-sm rounded-lg px-2.5 py-2.5 mt-2 w-full;
+}
+
+.separador{
+    @apply w-6/12 h-[0.2rem] bg-red-brown mx-auto my-7 rounded-md;
+}
+
+.campo_formulario{
+    @apply shadow-inner border-2 border-red-brown rounded-md mx-7 my-3 px-3 py-2 placeholder:text-sm;
+}
+
+.sin-flecha[type=number]{
+    -moz-appearance: textfield;
+}
+.sin-flecha::-webkit-outer-spin-button,
+.sin-flecha::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@tailwind utilities;
